@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacer Matrices</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        #matrices {
+            display: flex;
+            width: 100%;
+            gap: 20px
+        }
+    
+    </style>
+</head>
+<body>
+    <form id="matriz-form">
+        Filas: <input type="number" id="rows" min="1" required>
+        Columnas: <input type="number" id="columns" min="1" required>
+        <button type="button" onclick="generarMatriz()">Generar Matriz</button>
+    </form>
+
+    <div id="matrices">
+        <div id="matriz-container"></div>
+        
+        <div id="matriz-container2"></div>
+    </div>
+    <br>
+    <div id="result-container"></div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
